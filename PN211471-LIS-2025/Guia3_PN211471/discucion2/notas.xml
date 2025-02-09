@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<notas>
+<alumno>
+<nombre>Mila</nombre>
+<tarea>10</tarea>
+<investigacion>10</investigacion>
+<examen>10</examen>
+</alumno>
+<alumno>
+<nombre>Danna</nombre>
+<tarea>10</tarea>
+<investigacion>10</investigacion>
+<examen>10</examen>
+</alumno>
+</notas>
