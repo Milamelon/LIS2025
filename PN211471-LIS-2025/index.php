@@ -45,6 +45,21 @@
         <li><a class="dropdown-item" href="Guia2_PN211471/Practica2/index.php">Ejercicio Clase</a></li>
         </ul>
     </div>
+     <br>
+    <div class="dropdown container d-flex justify-content-center align-items-center">
+      <button class="btn btn-info dropdown-toggle w-50" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #e1cfff;" >
+        Asignación Guia 3
+      </button>  
+        <ul class="dropdown-menu w-50" style="background-color: #e1cfff;">
+        <li><a class="dropdown-item" href="Guia3_PN211471/Ejemplo1/Ejemplo1.php">Ejercicio 1</a></li>
+        <li><a class="dropdown-item" href="Guia3_PN211471/Ejemplo2/Ejemplo2.php">Ejercicio 2</a></li>
+        <li><a class="dropdown-item" href="Guia3_PN211471/Ejemplo3/index.html">Ejercicio 3</a></li>
+        <li><a class="dropdown-item" href="Guia3_PN211471/Ejemplo4/index.php">Ejercicio 4</a> </li>
+        <li><a class="dropdown-item" href="Guia3_PN211471/ejercicios_clases/arreglos.php">Ejercicio Clase 1</a></li>
+        <li><a class="dropdown-item" href="Guia3_PN211471/ejercicios_clases/multidimentionales.php">Ejercicio Clase 2</a></li>
+        <li><a class="dropdown-item" href="Guia3_PN211471/discucion2/promnotas.php">Ejercicio Clase</a></li>
+        </ul>
+    </div>
     
 </body>
 </html>
