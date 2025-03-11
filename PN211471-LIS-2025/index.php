@@ -59,7 +59,28 @@
         <li><a class="dropdown-item" href="Guia3_PN211471/ejercicios_clases/multidimentionales.php">Ejercicio Clase 2</a></li>
         <li><a class="dropdown-item" href="Guia3_PN211471/discucion2/promnotas.php">Ejercicio Clase</a></li>
         </ul>
+        <br>
+        </div>
+    <div class="dropdown container d-flex justify-content-center align-items-center">
+    <button class="btn btn-info dropdown-toggle w-50" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #e1cfff;" >
+        Desafio1
+      </button>  
+        <ul class="dropdown-menu bg-info-subtle w-50"  >
+        <li><a class="dropdown-item" href="Desafio1/index.html">Interfaz Publica</a></li>
+        <li><a class="dropdown-item" href="Desafio1/interfaces/textilProductos.php">Interfaz Administrativa</a></li>
+      </ul>
     </div>
-    
+    <br>
+    <div class="dropdown container d-flex justify-content-center align-items-center">
+    <button class="btn btn-info dropdown-toggle w-50" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #e1cfff;" >
+        Asignacion guia 6
+      </button>  
+        <ul class="dropdown-menu bg-info-subtle w-50"  >
+        <li><a class="dropdown-item" href="Guia6_PN211471/Ejemplo1/autospoo.php">Ejemplo1</a></li>
+        <li><a class="dropdown-item" href="Guia6_PN211471/Ejemplo2/bankform.php">Ejemplo2</a></li>
+        <li><a class="dropdown-item" href="Guia6_PN211471/Ejemplo3/sueldoneto.php">Ejemplo3</a></li>
+        <li><a class="dropdown-item" href="Guia6_PN211471/Ejemplo4/distanciadospuntos.php">Ejemplo4</a></li>
+      </ul>
+    </div>    
 </body>
 </html>
