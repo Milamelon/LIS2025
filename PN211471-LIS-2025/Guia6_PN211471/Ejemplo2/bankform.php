@@ -2,8 +2,12 @@
 <html lang="es">
 <head>
  <meta charset="utf-8" />
- <meta name="viewport" content="width=device-width, initial-scale=1, maximumscale=1">
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximumscale=1">
+ <link rel="stylesheet" 
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+integrity="sha384-
+Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+crossorigin="anonymous">
  <title>Cuentas de ahorro</title>
  <!--[if lt IE 9]>
  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -15,20 +19,20 @@
 <h1>Operaciones bancarias</h1>
 </nav>
  <article>
-<form name="operaciones" id="operaciones" method="POST" action="<?php echo
+<form name="operaciones" id="operaciones" method="POST" action="<?php echo 
 $_SERVER['PHP_SELF'] ?>">
-
+ 
  <div class="form-group">
  <label for="nombre">Nombre:</label>
  <div class="campo">
- <input class="form-control" type="text" name="nombre" size="25"
+ <input class="form-control" type="text" name="nombre" size="25" 
 maxlength="40" />
  </div>
  </div>
  <div class="form-group">
  <label for="cantidad">Cantidad:</label>
  <div class="campo">
- <input class="form-control" type="text" name="cantidad" size="8"
+ <input class="form-control" type="text" name="cantidad" size="8" 
 maxlength="10" />
  </div>
  </div>
@@ -48,15 +52,15 @@ maxlength="10" />
  </div>
  </div>
  </div>
- <input type="reset" class="btn btn-primary mb-2" name="restablecer"
+ <input type="reset" class="btn btn-primary mb-2" name="restablecer" 
 value="Cancelar" />
- <input type="submit" class="btn btn-primary mb-2" name="enviar"
+ <input type="submit" class="btn btn-primary mb-2" name="enviar" 
 value="Enviar" />
 </form>
 <?php
 spl_autoload_register(function($className){
-if (is_file("bankaccount.class.php")){
-include_once("bankaccount.class.php");}
+if (is_file("class/{$className}.class.php")){
+include_once("class/{$className}.class.php");}
 else {
 die("class/{$className}.class.php No existe en el proyecto");
 }
@@ -67,7 +71,7 @@ if(isset($_POST['enviar'])){
     if($titular == ""){
     $msg = "<h2>El nombre de la cuenta no puede estar vacío</h2><br />";
     }
-    $cantidad = isset($_POST['cantidad']) && is_numeric($_POST['cantidad']) ?
+    $cantidad = isset($_POST['cantidad']) && is_numeric($_POST['cantidad']) ? 
    $_POST['cantidad'] : 0;
     if($cantidad == 0 || $cantidad < 0){
     $msg .= "<h2>La cantidad no puede ser negativa, ni cero.</h2><br />";
@@ -96,3 +100,5 @@ if(isset($_POST['enviar'])){
 </section>
 </body>
 </html>
+   
+

@@ -32,10 +32,11 @@ spl_autoload_register(function($className){
     : 0;
      $pagohoraextra = (isset($_POST['pagohoraextra'])) ? 
     floatval($_POST['pagohoraextra']) : 0.0;
+    $prestamo = (isset($_POST['prestamo'])) ? floatval($_POST['prestamo']) : 0.0;
      //Creando instancias de la clase empleado
      $empleado1 = new empleado();
      $empleado1->obtenerSalarioNeto($name, $apellido, $sueldo, $numHorasExtras, 
-    $pagohoraextra);
+    $pagohoraextra, $prestamo);
      }
     }
     else{ 
@@ -70,6 +71,11 @@ class="inputField form-control" /><br />
  <div class="form-group">
  <label for="pogohoraextra">Pago por hora extra:</label>
  <input type="text" name="pagohoraextra" id="pagohoraextra" size="4" 
+maxlength="6" class="inputField form-control" /><br />
+</div>
+<div class="form-group">
+ <label for="prestamo">Prestamo de descuento</label>
+ <input type="text" name="prestamo" id="prestamo" size="4" 
 maxlength="6" class="inputField form-control" /><br />
 </div>
  <input type="submit" name="enviar" class="btn btn-primary mb-2" value="Enviar" 
