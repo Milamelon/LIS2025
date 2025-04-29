@@ -75,7 +75,7 @@
                     </li>
                     <?php if (!empty($_SESSION['rol'])): ?>
                         <li class="nav-item">
-                        <a class="nav-link" href="<?= PATH ?>/Usuarios/login">
+                        <a class="nav-link" href="<?= PATH ?>/Usuarios/panel">
                             <i class="fas fa-user-shield"></i> Admin
                         </a>
                        </li>

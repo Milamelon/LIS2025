@@ -16,10 +16,17 @@ class VentasModel extends Model {
     }
 
     public function insert($venta = array()){
-        $query = "INSERT INTO ventas(codigo_ventas, codigo_cliente, fecha, total)
-                  VALUES(:codigo_ventas, :codigo_cliente, :fecha, :total)";
+        $query = "INSERT INTO ventas (codigo_ventas, codigo_cliente, total)
+          VALUES (:codigo_ventas, :codigo_cliente, :total)";
         return $this->set_query($query, $venta);
     }
+
+    //borra venta
+    public function delete($id = '') {
+        $query = "DELETE FROM ventas WHERE codigo_ventas=:codigo_ventas";
+        return $this->set_query($query, ['codigo_ventas' => $id]);
+    }
+
 }
 
 

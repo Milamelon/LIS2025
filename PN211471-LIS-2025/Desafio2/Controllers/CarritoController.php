@@ -75,22 +75,24 @@ class CarritoController extends Controller {
     }
 
     public function procesarPago() {
-        $codigo = str_pad(rand(0, 9999), 4, '0', STR_PAD_LEFT); // Generar un código de venta aleatorio
+        $codigo = 'VENTA' . str_pad(rand(0, 9999), 4, '0', STR_PAD_LEFT);
         $cod_cliente = $this->modelClientes->getCodigoCliente($_POST['nombre']); // Obtener el código del cliente
-        $fecha_venta = date('Y-m-d'); // Solo la fecha actual
 
-        $venta = [
+        $ventas = [
             'codigo_ventas' => $codigo,
             'codigo_cliente' => $cod_cliente,
-            'fecha_venta' => $fecha_venta,
             'total' => $_POST['total']
         ];
-        if($this->model->insert($venta) != 0){
+        if($this->model->insert($ventas)!=0){
             echo "<script>alert('Pago Procesado correctamente');</script>";
             echo "<script>window.location.href='".PATH."/Principal/index';</script>";
+            // Limpiar el carrito después de procesar el pago
+            unset($_SESSION['carrito']);
+            $_SESSION['carrito'] = []; // Reiniciar el carrito            
         }
         else{
-           
+            echo "<script>alert('Error al procesar el pago');</script>";
+            echo "<script>window.location.href='".PATH."/Carrito/ver';</script>";      
         }
     }
 

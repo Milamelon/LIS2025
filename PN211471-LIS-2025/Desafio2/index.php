@@ -5,6 +5,7 @@ include_once 'Controllers/UsuariosController.php';
 include_once 'Controllers/ClientesController.php';
 include_once 'Controllers/PrincipalController.php';
 include_once 'Controllers/CarritoController.php';
+include_once 'Controllers/VentasController.php';
 
 $url = $_SERVER['REQUEST_URI'];
 $slices=explode('/', $url);

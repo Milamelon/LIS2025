@@ -55,9 +55,10 @@ class ClientesModel extends Model{
     }
 
     //obtener codigo de cliente
-    public function getCodigoCliente($id=''){
+    public function getCodigoCliente($nombre) {
         $query = "SELECT codigo_cliente FROM clientes WHERE nombre = :nombre";
-        return $this->get_query($query,['nombre'=>$id]);
+        $result = $this->get_query($query, ['nombre' => $nombre]);
+        return !empty($result) ? $result[0]['codigo_cliente'] : null; // Devuelve solo el valor
     }
 
     //validar si el correo ya existe

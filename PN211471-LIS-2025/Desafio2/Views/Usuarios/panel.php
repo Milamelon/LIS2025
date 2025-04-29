@@ -1,3 +1,4 @@
+<!-- filepath: c:\xampp\htdocs\PN211471-LIS-2025\Desafio2\Views\usuarios\panel.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +30,7 @@
                                 <li><a class="dropdown-item" href="<?= PATH ?>/Clientes/index">Clientes</a></li>
                             <?php endif; ?>
                             <li><a class="dropdown-item" href="<?= PATH ?>/Productos/index">Productos</a></li>
+                            <li><a class="dropdown-item" href="<?= PATH ?>/Ventas/index">Ventas</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -104,6 +106,20 @@
                 </div>
             </div>
             <?php endif; ?>
+
+            <!-- Ventas -->
+            <div class="col-md-6">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="<?= PATH ?>/img/ventas.png" class="card-img-top" alt="Ventas" style="height: 250px; width: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Ventas</h5>
+                        <p class="card-text">Consulta el historial de ventas realizadas.</p>
+                        <div class="d-flex justify-content-center">
+                        <a href="<?= PATH ?>/Ventas/index" class="btn btn-primary">Ir a Ventas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
