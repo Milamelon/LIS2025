@@ -61,6 +61,11 @@
                             <td><?= htmlspecialchars($venta['codigo_cliente']); ?></td>
                             <td><?= htmlspecialchars($venta['fecha']); ?></td>
                             <td>$<?= number_format($venta['total'], 2); ?></td>
+                            <td class="text-center align-middle">
+                                    <a href="<?= PATH ?>/Ventas/generarPDF/<?= $venta['codigo_ventas'] ?>" class="btn btn-sm btn-info" target="_blank">
+                                        IMPRIMIR FACTURA
+                                    </a>
+                                </td>
                         </tr>
                     <?php endforeach; ?>
                 <?php else: ?>
